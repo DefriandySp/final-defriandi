@@ -5,8 +5,8 @@ const base = require('../support/page-object/base')
 const data = require('../support/page-object/data-static')
 const random = require('../support/common-function/randomize')
 
-describe("Pelanggan", () => {
-    describe("Create Pelanggan", () => {
+describe("Pelanggan Baru", () => {
+    describe("Membuat Data Pelanggan", () => {
         var cust_name = random.name()
         var cust_phone_number = random.phone_number()
         var cust_address = data.customer_data.static_address

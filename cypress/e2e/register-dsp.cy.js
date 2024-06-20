@@ -2,7 +2,7 @@ const registerPage = require('../support/page-object/register-page/register-page
 const base = require('../support/page-object/base')
 const random = require('../support/common-function/randomize')
 
-describe("Register", () => {
+describe("Tab Register", () => {
     it("with valid data", () => {
         base.openUrl()
         registerPage.goToRegisterPage()

@@ -5,7 +5,7 @@ const base = require('../support/page-object/base')
 const data = require('../support/page-object/data-static')
 const random = require('../support/common-function/randomize')
 
-describe("Produk", () => {
+describe("Tab Produk", () => {
     describe("Membuat Produk Baru", () => {
         var product_code = random.product_code()
         var product_name = random.product_name()

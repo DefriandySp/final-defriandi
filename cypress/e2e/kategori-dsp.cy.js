@@ -6,7 +6,7 @@ const data = require('../support/page-object/data-static')
 const random = require('../support/common-function/randomize')
 
 describe("Kategori", () => {
-    describe("Create Kategori", () => {
+    describe("Membuat Kategori Baru", () => {
         var category_name = random.category_name()
         var category_desc = data.category_data.static_description
 
@@ -25,8 +25,9 @@ describe("Kategori", () => {
         })
 
         afterEach(() => {
-            kategoriPage.deleteKategori(category_name)
+            kategoriPage.deleteKategori(category_name) 
             kategoriPage.verifyKategoriDeletedSuccessfully()
+            // flaky
         })
     })
 })
